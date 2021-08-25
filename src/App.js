@@ -34,7 +34,7 @@ const App = () => {
   },[city]);
 
   return (
-    <Router>
+    <Router basename={window.location.pathname || ''}>
       <div className="content">
         <Switch>
         <Route exact path="/"

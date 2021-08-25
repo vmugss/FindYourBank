@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import { BankTable } from './components/BankTable';
 import { Container } from 'reactstrap';
@@ -34,7 +34,7 @@ const App = () => {
   },[city]);
 
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <div className="content">
         <Switch>
         <Route exact path="/"
@@ -44,7 +44,7 @@ const App = () => {
               )
           }
         }/>
-          <Route exact path="/all_banks">
+          <Route path="/all_banks">
             <Container style={{marginTop: 35}}>
               <h2><strong>All Banks</strong></h2>
               { error && 

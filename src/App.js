@@ -34,7 +34,7 @@ const App = () => {
   },[city]);
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="content">
         <Switch>
         <Route exact path="/"

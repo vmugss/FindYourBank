@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const BankDetails = ({ data }) => {
     const { ifsc_code } = useParams();
-    console.log(data);
     return(
         <Container style={{marginTop: 35}}>
             <h3><strong>{data.bank_name}</strong></h3>

@@ -35,3 +35,7 @@ tr {
 .paginationItems{
     margin: 0 10px 0 10px;
 }
+
+#searchQuery:disabled{
+  cursor: not-allowed;
+}

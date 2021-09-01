@@ -58,6 +58,7 @@ export const BankTable = ({ data, setSelectedRow }) => {
             ))}
         </select>
         <input
+            id="searchQuery"
             class="inputElement"
             value={inputValue || ''}
             type="search"

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import { BankTable } from './components/BankTable';
 import { Container } from 'reactstrap';
 import BankDetails from './components/BankDetails';
@@ -34,7 +34,7 @@ const App = () => {
   },[city]);
 
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+//    <Router basename={process.env.PUBLIC_URL}>
       <div className="content">
         <Switch>
         <Route exact path="/"
@@ -75,7 +75,7 @@ const App = () => {
           </Route>
         </Switch>
       </div>
-    </Router>
+//    </Router>
   );
 }
 
